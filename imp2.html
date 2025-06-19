@@ -116,6 +116,14 @@
     border-style: solid;
     border-color: transparent transparent black transparent;
   }
+  .show {
+  display: block;
+  }
+
+  .hide {
+  display: none;
+  }
+
    
 
 
@@ -127,8 +135,9 @@
   <div>4</div> 
 </div>
   <h2 style="text-align: left;">form</h2>
-  <form action="/action_page.php" target="_blank" method="post" autocomplete="on" >
-    <fieldset style="text-align: center;" style="border-color: cornflowerblue;">
+  <form action="javascript:void(0)" onsubmit="submitForm()" target="_blank" method="post" autocomplete="on" id="myform" class="show">
+    <fieldset style="text-align: center; border-color: cornflowerblue;">
+
       <legend> form:</legend>
 
   <div class="tool">  
@@ -166,12 +175,43 @@
     <label for="coffee">coffee</label><br>
     <input type="radio" id="milk" name="fav_drink" value="milk" required>
     <label for="milk">milk</label><br>
+    <input type="submit" value="submit"><br>
 
     <br><br>
+ </fieldset>
+</form>
+    
+   
+    <button type="button" onclick="showThankYou()">Thank You</button><br><br>
+    <button type="button" onclick="goback()">go back</button>
+    <div id="thanksMessage" style=" text-align: center; font-size: 100px; color: rgb(185, 98, 140); font-weight: bold;" class="hide">
+        THANKYOU
+</div>
+<script>
+  function submitForm(){
+    alert("form submitted")
+    showThankYou()
+  }
+  function showThankYou(){
+    document.getElementById("myform").classList.add("hide");
+    document.getElementById("myform").classList.remove("show");
 
-    <input type="submit" value="submit"><br>
-  </form>
-  </fieldset>
+    document.getElementById("thanksMessage").classList.add("show");
+    document.getElementById("thanksMessage").classList.remove("hide");
+
+  }
+  function goback(){
+    document.getElementById("myform").classList.add("show");
+    document.getElementById("myform").classList.remove("hide");
+    document.getElementById("thanksMessage").classList.add("hide");
+    document.getElementById("thanksMessage").classList.remove("show");
+  
+  
+  }
+</script>
+
+  
+   
 <br>  
 <br>
 </head>

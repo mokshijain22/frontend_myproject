@@ -1,0 +1,83 @@
+/*h1{
+    color: green;
+}*/
+button{
+    color: white;
+    background-color:green ;
+
+}
+body{
+    background-color: skyblue;
+}
+#headingone{
+    color: blue;
+}
+.myclass{
+    color: blueviolet ;
+}
+#box{
+    /*background-color:blue ;*/
+    color: white;
+}
+/*div{
+    text-align: center;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    
+}*/
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 50px;
+    text-transform: capitalize;
+    border-style: double;
+    border-color: blueviolet;
+    border-radius: 10%;
+    margin: auto;
+    padding: 3px 5px 10px 15px;
+
+}
+
+.red{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+}
+.yellow{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+
+}
+.green{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+}
+.red ,.yellow, .green{
+    border: 2px solid black;
+}
+.traffic-light{
+    background-color: black;
+    width: 120px;    
+    border-radius: 20px;
+    margin: auto;
+    padding: 10px;
+    align-items: center;
+    
+}
+.navbar{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    
+}
+button{
+    background-color: orange;
+}
+#logo{
+    color: orange;
+    font-size: 25px;
+}
