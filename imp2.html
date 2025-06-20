@@ -154,15 +154,15 @@
     <br><br>
     
     <label  for="description" required>desciption: </label>
-    <textarea class="desciption" name="first name" rows="5" cols="20" required > </textarea>
+    <textarea class="desciption" name="first name" rows="5" cols="20" required ></textarea>
   
     <br><br>
 
     <label for="gender">choose your gender:</label>
-    <select id="gender"name="gender" required>
+    <select id="gender"name="gender" onchange="genderchanged()" required >
       <option value="male">male</option>
       <option value="female">female</option>
-      
+
     </select>
 
     <br><br>
@@ -188,6 +188,10 @@
         THANKYOU
 </div>
 <script>
+  
+  function genderchanged(){
+    alert("gender changed:" )
+  }
   function submitForm(){
     alert("form submitted")
     showThankYou()
@@ -205,8 +209,6 @@
     document.getElementById("myform").classList.remove("hide");
     document.getElementById("thanksMessage").classList.add("hide");
     document.getElementById("thanksMessage").classList.remove("show");
-  
-  
   }
 </script>
 
